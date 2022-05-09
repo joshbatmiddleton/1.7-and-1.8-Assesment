@@ -1,7 +1,7 @@
-# Version 1 of the Welcome screen.
+# Takes Version 1 code and makes it more efficient and reliable, and makes it into a loop system.
 
 # Saying hello to the user
-question = input("Hello! Welcome to this Māori quiz! Have you played before? ")
+question = input("Hello! Welcome to this Māori quiz! Have you played before? ").lower()
 
 # If the user says yes, the program will continue
 
