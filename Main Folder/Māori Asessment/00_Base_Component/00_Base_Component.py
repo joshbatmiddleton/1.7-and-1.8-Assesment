@@ -31,7 +31,7 @@ def yes_no(question_text):
 
 
 def instructions():
-    print("******************** How To Play ********************")
+    print("********************************* How To Play *********************************")
     print()
     print()
     print("This is a quiz.")
