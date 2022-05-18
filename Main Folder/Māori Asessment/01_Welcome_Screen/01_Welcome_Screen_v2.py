@@ -1,4 +1,4 @@
-# Takes Version 1 code and makes it more efficient and reliable.
+# Takes v1 code and makes it more efficient and reliable.
 
 # Saying hello to the user
 
