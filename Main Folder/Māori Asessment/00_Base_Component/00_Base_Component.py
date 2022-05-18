@@ -39,8 +39,8 @@ def instructions():
     print("To pass the quiz, you will need to answer a specific amount of questions right.")
     print("If you get it wrong, that's ok!")
     print()
-    print("NOTE: Prior knowledge is allowed, replaying the quiz is also allowed,")
-    print("Although the answers will not be shown, that will be for you to discover!")
+    print("NOTE: Prior knowledge is allowed, replaying the quiz is also allowed.")
+    print("Also, the answers will not be shown, that will be for you to discover!")
     print()
 
 # Main Routine goes here.
