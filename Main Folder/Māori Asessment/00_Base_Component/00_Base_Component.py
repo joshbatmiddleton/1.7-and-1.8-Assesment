@@ -9,19 +9,19 @@ def yes_no(question_text):
     while True:
 
         # Ask the user if they have played before:
-        answer = input(question_text).lower()
+        answer_1 = input(question_text).lower()
 
         # If they say yes, output "Program continues"
 
-        if answer == "yes" or answer == "Yes" or answer == "Y" or answer == "y":
-            answer = "Yes"
-            return answer
+        if answer_1 == "yes" or answer_1 == "Yes" or answer_1 == "Y" or answer_1 == "y":
+            answer_1 = "Yes"
+            return answer_1
 
         # If they say no, output "display instructions"
 
-        elif answer == "no" or answer == "No" or answer == "N" or answer == "n":
-            answer = "No"
-            return answer
+        elif answer_1 == "no" or answer_1 == "No" or answer_1 == "N" or answer_1 == "n":
+            answer_1 = "No"
+            return answer_1
 
         # Otherwise, show error message
         else:
@@ -58,3 +58,31 @@ else:
 print()
 start_game = yes_no("Do you want to start? ")
 print(f"You entered '{start_game}'")
+
+import random
+
+print()
+print("Get ready to answer 5 questions!!!")
+
+# 1st list
+numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+
+# 2nd list
+maori_numbers = ["Tahi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekāu"]
+
+question = random.choice(numbers_in_words)
+print()
+attempt = input(f"What is the Māori number for {question}: ")
+
+# Using the index position of the question in one list to find the corresponding
+# index position of the answer
+
+answer_index = numbers_in_words.index(question)
+answer = maori_numbers[answer_index]
+
+# Compare the attempt to see if it matches the correct answer
+if attempt == answer:
+    print("Correct! Well done!")
+
+else:
+    print("Incorrect!\n")
