@@ -20,6 +20,7 @@ def yes_no(question_text):
 
 
 # Main Routine goes here.
+
 print("Hello! Welcome to this Māori quiz!")
 question = yes_no("Have you played this quiz before? ")
 print(f"You entered '{question}'")

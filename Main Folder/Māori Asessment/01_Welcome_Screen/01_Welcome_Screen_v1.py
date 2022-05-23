@@ -1,6 +1,7 @@
 # Version 1 of the Welcome screen.
 
 # Saying hello to the user
+
 question = input("Hello! Welcome to this Māori quiz! Have you played before? ")
 
 # If the user says yes, the program will continue
