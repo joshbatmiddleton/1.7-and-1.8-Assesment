@@ -25,6 +25,7 @@ def yes_no(question_text):
         else:
             print("ERROR 1: Please answer 'yes' or 'no'(In any format of yes or no).")
 
+
 # Function to display instructions
 
 
@@ -40,6 +41,7 @@ def instructions():
     print("NOTE: Prior knowledge is allowed, replaying the quiz is also allowed.")
     print("Also, the answers will not be shown, that will be for you to discover!")
     print()
+
 
 # Main Routine goes here.
 
@@ -58,6 +60,8 @@ else:
 print()
 start_game = yes_no("Do you want to start? ")
 print(f"You entered '{start_game}'")
+
+# Import code
 
 import random
 
