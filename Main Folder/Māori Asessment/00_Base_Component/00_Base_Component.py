@@ -7,8 +7,6 @@
 
 def yes_no(question_text):
     while True:
-
-        # Ask the user if they have played before:
         answer_1 = input(question_text).lower()
 
         # If they say yes, output "Program continues"
@@ -44,6 +42,7 @@ def instructions():
     print()
 
 # Main Routine goes here.
+# Ask the user if they have played before:
 
 
 print("Welcome to this Māori quiz!")
