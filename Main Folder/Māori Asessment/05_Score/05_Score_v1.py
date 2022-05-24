@@ -1,1 +1,1 @@
-# This is the score piece of code, and it functions as like a tally/
+# This is the score piece of code, and it functions as like a tally/score for the game.
