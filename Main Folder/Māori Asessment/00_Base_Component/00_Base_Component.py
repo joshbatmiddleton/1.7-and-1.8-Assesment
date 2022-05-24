@@ -2,7 +2,10 @@
 # NOTE: This is NOT the final version of the base component,
 # nor is it a completely finished and polished piece of code.
 
+# Code to do functions:
+
 import random
+score = 0
 
 # Function goes here:
 
@@ -77,21 +80,24 @@ numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eigh
 # 2nd list
 
 maori_numbers = ["Tāhi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekāu"]
+for i in maori_numbers:
+    question = random.choice(numbers_in_words)
+    print()
+    attempt = input(f"What is the Māori number for {question}: ")
 
-question = random.choice(numbers_in_words)
-print()
-attempt = input(f"What is the Māori number for {question}: ")
+    # Using the index position of the question in one list to find the corresponding
+    # index position of the answer
 
-# Using the index position of the question in one list to find the corresponding
-# index position of the answer
+    answer_index = numbers_in_words.index(question)
+    answer = maori_numbers[answer_index]
 
-answer_index = numbers_in_words.index(question)
-answer = maori_numbers[answer_index]
+    # Compare the attempt to see if it matches the correct answer
 
-# Compare the attempt to see if it matches the correct answer
+    if attempt == answer:
+        print("Correct! Well done!")
+        score += 1
 
-if attempt == answer:
-    print("Correct! Well done!")
+    else:
+        print("Incorrect!")
 
-else:
-    print("Incorrect!")
+    print(score)
