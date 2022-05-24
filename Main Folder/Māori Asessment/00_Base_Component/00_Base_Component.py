@@ -2,6 +2,8 @@
 # NOTE: This is NOT the final version of the base component,
 # nor is it a completely finished and polished piece of code.
 
+import random
+
 # Function goes here:
 
 
@@ -49,7 +51,9 @@ def instructions():
 
 
 print("Welcome to this Māori quiz!")
+print()
 played_before = yes_no("Have you played this quiz before? ")
+print()
 print(f"You entered '{played_before}'")
 print()
 
@@ -63,8 +67,6 @@ print(f"You entered '{start_game}'")
 
 # Import code
 
-import random
-
 print()
 print("Get ready to answer 5 questions!!!")
 
@@ -74,7 +76,7 @@ numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eigh
 
 # 2nd list
 
-maori_numbers = ["Tahi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekāu"]
+maori_numbers = ["Tāhi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekāu"]
 
 question = random.choice(numbers_in_words)
 print()
@@ -92,4 +94,4 @@ if attempt == answer:
     print("Correct! Well done!")
 
 else:
-    print("Incorrect!\n")
+    print("Incorrect!")
