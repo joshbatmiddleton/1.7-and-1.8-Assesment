@@ -6,42 +6,9 @@
 # Code to do functions:
 
 import random
-
-
-def quiz():
-    score = 0
-    # 1st list
-
-    numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
-
-    # 2nd list
-
-    maori_numbers = ["Tahi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekau"]
-
-    for i in maori_numbers:
-        question = random.choice(numbers_in_words)
-        print()
-        attempt = input(f"What is the Māori number for {question}: ")
-
-        # Using the index position of the question in one list to find the corresponding
-        # index position of the answer
-
-        answer_index = numbers_in_words.index(question)
-        answer = maori_numbers[answer_index]
-
-        # Compare the attempt to see if it matches the correct answer
-
-        if attempt == answer:
-            print("Correct! Well done!")
-            score += 1
-
-        else:
-            print("Incorrect!")
-
-        print(score)
+score = 0
 
 # Function goes here:
-
 
 def yes_no(question_text):
     while True:
@@ -65,7 +32,6 @@ def yes_no(question_text):
 
 # Function to display instructions
 
-
 def instructions():
     print("********************************* How To Play *********************************")
     print()
@@ -82,7 +48,6 @@ def instructions():
 # Main Routine goes here.
 
 # Ask the user if they have played before:
-
 
 print("Welcome to this Māori quiz!")
 print()
@@ -102,8 +67,34 @@ print(f"You entered '{start_game}'")
 # Import code
 
 print()
-print("Get ready to answer questions!!!")
+print("Get ready to answer 5 questions!!!")
 
-# quiz function:
+# 1st list
 
-quiz()
+numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+
+# 2nd list
+
+maori_numbers = ["Tāhi", "Rua", "Toru", "Wha", "Rima", "Ono", "Whētu", "Waru", "Iwa", "Tekāu"]
+
+for i in maori_numbers:
+    question = random.choice(numbers_in_words)
+    print()
+    attempt = input(f"What is the Māori number for {question}: ")
+
+    # Using the index position of the question in one list to find the corresponding
+    # index position of the answer
+
+    answer_index = numbers_in_words.index(question)
+    answer = maori_numbers[answer_index]
+
+    # Compare the attempt to see if it matches the correct answer
+
+    if attempt == answer:
+        print("Correct! Well done!")
+        score += 1
+
+    else:
+        print("Incorrect!")
+
+    print(score)
