@@ -99,5 +99,3 @@ def game():
             print("Incorrect!")
 
         print(score)
-
-# Main routine (Will be down here eventually)
