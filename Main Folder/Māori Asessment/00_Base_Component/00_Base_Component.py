@@ -11,7 +11,7 @@ def game():
     score = 0
 
     # Function goes here:
-    
+
     def yes_no(question_text):
         while True:
             answer_1 = input(question_text).lower()
