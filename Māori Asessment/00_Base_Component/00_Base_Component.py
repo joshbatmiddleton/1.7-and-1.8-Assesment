@@ -1,7 +1,6 @@
 # 00 Base Component
 
-# NOTE: This is NOT the final version of the base component,
-# nor is it a completely finished and polished piece of code.
+# This is the second to last version for base component. The last version will be v1.5.0
 
 # Code to do functions:
 
@@ -10,6 +9,7 @@ import random
 
 def quiz():
     score = 0
+
     # 1st list
 
     numbers_in_words = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
@@ -78,8 +78,6 @@ def instructions():
     print("NOTE: Prior knowledge is allowed, replaying the quiz is also allowed.")
     print("Also, the answers will not be shown, that will be for you to discover!")
     print()
-
-# Main Routine goes here.
 
 # Ask the user if they have played before:
 
