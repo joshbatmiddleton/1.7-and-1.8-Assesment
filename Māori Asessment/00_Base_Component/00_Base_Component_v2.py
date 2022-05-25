@@ -1,4 +1,4 @@
-# 00 Base Component
+# 00 Base Component_v2
 
 # NOTE: This is NOT the final version of the base component,
 # nor is it a completely finished and polished piece of code.
@@ -9,6 +9,7 @@ import random
 score = 0
 
 # Function goes here:
+
 
 def yes_no(question_text):
     while True:
@@ -32,6 +33,7 @@ def yes_no(question_text):
 
 # Function to display instructions
 
+
 def instructions():
     print("********************************* How To Play *********************************")
     print()
@@ -48,6 +50,7 @@ def instructions():
 # Main Routine goes here.
 
 # Ask the user if they have played before:
+
 
 print("Welcome to this Māori quiz!")
 print()

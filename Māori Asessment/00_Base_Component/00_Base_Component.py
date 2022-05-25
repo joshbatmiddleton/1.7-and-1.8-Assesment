@@ -1,6 +1,6 @@
 # 00 Base Component
 
-# This is the second to last version for base component. The last version will be v1.5.0
+# This is the second to last version for base component. The last version will be v1.5.0.
 
 # Code to do functions:
 
@@ -39,7 +39,7 @@ def quiz():
             print("Incorrect!")
 
         print(score)
-
+    return score
 # Function goes here:
 
 
@@ -103,5 +103,11 @@ print()
 print("Get ready to answer questions!!!")
 
 # quiz function:
-
-quiz()
+replay = "Yes"
+while replay == "Yes":
+    score = quiz()
+    print(f"Well done! You got {score} out of 10")
+    replay = yes_no("Do you want to play again? ")
+    if replay == "Yes":
+        score = quiz()
+print("Goodbye. Thanks for playing!")
