@@ -1,6 +1,4 @@
-# 00 Base Component
-
-# This is the second to last version for base component. The last version will be v1.5.0.
+# Welcome to the official version of the Maori quiz!
 
 # Code to do functions:
 

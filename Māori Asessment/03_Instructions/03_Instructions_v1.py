@@ -1,6 +1,6 @@
 # Took the code from 02_Welcome_Screen_Function_v1 and made it the base for instructions.
 
-# functions go here:
+# Function goes here:
 
 def yes_no(question_text):
     while True:

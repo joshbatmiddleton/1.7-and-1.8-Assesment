@@ -1,7 +1,6 @@
 # 00 Base Component_v2
 
-# NOTE: This is NOT the final version of the base component,
-# nor is it a completely finished and polished piece of code.
+# Second Version (backup)
 
 # Code to do functions:
 
